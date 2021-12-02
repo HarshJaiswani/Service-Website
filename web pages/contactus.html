@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Company's Name Goes Here</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="contactus.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="navbar">
+      <i class="fa fa-bars"></i>
+      <img id="logo" src="#" alt="logo goes here" />
+      <div>
+        <a href="../index.html">Home</a>
+        <a href="../web pages/about.html">About Us</a>
+        <a href="../web pages/services.html">Services</a>
+        <a href="#contacthere">Contact Us</a>
+        <a href="../web pages/blog.html">Blog</a>
+      </div>
+    </nav>
+    <div class="navmobile">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="../index.html">
+              <span class="icon"
+                ><i class="fa fa-home" aria-hidden="true"></i
+              ></span>
+              <span class="title">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="../web pages/about.html">
+              <span class="icon"><i class="fa fa-user"></i></span>
+              <span class="title">About Us</span>
+            </a>
+          </li>
+          <li>
+            <a href="../web pages/services.html">
+              <span class="icon"><i class="fa fa-cog"></i></span>
+              <span class="title">Services</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contacthere">
+              <span class="icon"><i class="fa fa-phone"></i></span>
+              <span class="title">Contact Us</span>
+            </a>
+          </li>
+          <li>
+            <a href="../web pages/blog.html">
+              <span class="icon"><i class="fa fa-pencil-square-o"></i></span>
+              <span class="title">Blog</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="toggle"></div>
+    </div>
+    <header id="contacthere">
+      <h1>Contact Us</h1>
+    </header>
+    <section id="info">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242118.14236113423!2d73.7225316354731!3d18.52456460217485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1627517566878!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+      <div>
+        <h2>For any inquiries please Contact:</h2>
+        <span
+          ><h2>Address</h2>
+          <p>
+            office No. locality <br />
+            ward/area <br />
+            pune maharastra
+          </p></span
+        >
+        <p><b> Email: </b> <br> <a href="">email@host.com</a></p>
+        <p><b> Contact Number: </b> <br> <a href="">+91 94xxx12345</a></p>
+    </div>
+    </section>
+    <section id="socialconnect">
+        <a href="#" style="color: brown;"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" style="color: navy;"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        <a href="#" style="color: blue;"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        <a href="#" style="color: red;"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+        <a href="#" id="what" style="color: green;"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+    </section>
+    <footer>
+      <div>
+        <h3>Company's Name Goes Here</h3>
+        <p>description | copyright | firm</p>
+      </div>
+      <div>
+        <h3>Follow Us On</h3>
+        <span class="social">
+          <a href="#" target="_blank"><img src="../img/youtube.png" /></a>
+          <a href="#" target="_blank"><img src="../img/instagram.png" /></a>
+        </span>
+        <span class="social">
+          <a href="#" target="_blank"><img src="../img/linkedin.png" /></a>
+          <a href="#" target="_blank"><img src="../img/twitter.png" /></a>
+        </span>
+      </div>
+      <div id="footthree">
+        <h3>Contact Us</h3>
+        <a href="">youremail@provider.com</a>
+        <a href="tel:07999335624">+91 94xxxx1234</a>
+        <!-- click on phone number  to get whatsapp as well as call option -->
+        <a href="#info">Our Location</a>
+      </div>
+    </footer>
+    <script>
+      // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 80 ||
+          document.documentElement.scrollTop > 80
+        ) {
+          document.getElementById("navbar").style.padding = "15px 5px";
+          document.getElementById("logo").style.fontSize = "15px";
+          // document.getElementsByClassName("navmobile").style.margin-top = "-15px";
+        } else {
+          document.getElementById("navbar").style.padding = "30px 10px";
+          document.getElementById("logo").style.fontSize = "20px";
+          // document.getElementsByClassName("navmobile").style.margin-top = "0px";
+        }
+      }
+      const navigation = document.querySelector(".navigation");
+      document.querySelector(".toggle").onclick = function () {
+        this.classList.toggle("active");
+        navigation.classList.toggle("active");
+      };
+      const navmobile = document.querySelector(".navmobile");
+      document.querySelector(".fa-bars").onclick = function () {
+        this.classList.toggle("inaction");
+        navmobile.classList.toggle("inaction");
+      };
+      // const tooggle = document.querySelector('.toggle');
+      // document.querySelector('.fa-bars').onclick = function (){
+      //     this.classList.toggle('inaction');
+      //     tooggle.classList.toggle('inaction');
+      // }
+    </script>
+  </body>
+</html>
